@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-header">
+        {{title}}
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            <button class='btn btn-primary'
+                            (click)='toggleImage()'>
+                            {{showImage? 'Hide' : 'Show'}} Image
+                            </button>
+                        </th>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Release Date</th>
+                        <th>Price</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>                        
+            <tbody>
+                 <tr *ngFor='let books of Book'>
+                    <td><img *ngIf='showImage'
+                    [src] = 'books.bookImageurl'
+                    [style.width.px] = 'imageWidth' 
+                    [style.margine.px] = 'imageMargin'></td>
+                    <td>{{ books.bookName }}</td>
+                    <td>{{ books.bookAuthorname }}</td>
+                    <td>{{ books.bookReleasedate }}</td>
+                    <td>{{ books.bookPrice}}</td>
+                    <td>{{ books.bookRate}}</td>
+                    <td>
+                        <button class="btn btn-warning" style="cursor:pointer" (click)="editbook(books)">Update</button>
+                        <button class="btn btn-danger" style="cursor:pointer" (click)="deleteRemove(books)" style="margin-left: 5px;">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>

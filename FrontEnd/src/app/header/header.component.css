@@ -1,0 +1,62 @@
+/*---Google font---*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*---Bases---*/
+*
+
+/*---Header---*/
+.header
+{
+  height:110vh;
+  width:100vw;
+  background: linear-gradient(rgba(165, 69, 17, 0.381), rgba(0,0,0,0.5)),url('https://wallpaperaccess.com/full/2862101.jpg');
+  background-size:cover; 
+}
+
+
+/*---Navbar---*/
+.navbar
+{
+  position:absolute;
+  width:100%;
+  padding:50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color: rgba(95, 54, 24, 0.87);
+}
+
+.navbar a 
+{
+  color:white;
+}
+
+@media screen and (max-width:900px)
+{
+  .navbar
+  {
+    padding:0;
+  }
+  
+  .nav-links
+  {
+    top:0;
+    left:-100%;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(215, 39, 39, 0.5);
+    backdrop-filter:blur(8px);
+    width:100%;
+    height:100vh;
+    transition: left 0.5s ease;
+  }
+  
+  .nav-links ul
+  {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  
+}

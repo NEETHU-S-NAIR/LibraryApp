@@ -1,0 +1,16 @@
+.footer{
+    background-color:  rgba(104, 46, 5, 0.884);
+    text-align: center;
+    height: 6.9em;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    margin-top: 88px;
+}
+.footcon{
+    color: white;
+    margin-top: 3.4%;
+}
+.footp{
+    color: #abb3b0;
+    margin-left:85% ;
+}

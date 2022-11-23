@@ -1,0 +1,42 @@
+<div class="card">
+    <form (ngSubmit)="editbook()">
+        <div class="card-header">
+            edit Product
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label>Book Name</label></td>
+                            <td><input type="text" name="p_name" [(ngModel)]="bookItem.bookName"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Author Name</label></td>
+                            <td><input type="text" name="p_code" [(ngModel)]="bookItem.bookAuthorname"></td>
+                        <tr>
+                            <td><label>Release Date</label></td>
+                            <td><input type="text" name="p_date" [(ngModel)]="bookItem.bookReleasedate"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Book Price</label></td>
+                            <td><input type="text" name="p_price" [(ngModel)]="bookItem.bookPrice"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Book Rating</label></td>
+                            <td><input type="text" name="p_rating" [(ngModel)]="bookItem.bookRate"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Product Imageurl</label></td>
+                            <td><input type="text" name="p_image" [(ngModel)]="bookItem.bookImageurl"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" value="submit"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
