@@ -4,13 +4,43 @@
     height: 6.9em;
     padding-top: 1%;
     padding-bottom: 5%;
-    margin-top: 88px;
+    margin-top: 50%;
 }
 .footcon{
     color: white;
     margin-top: 3.4%;
 }
 .footp{
-    color: #abb3b0;
+    color: #047047;
     margin-left:85% ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* div
+{
+    background: #800506;
+background: -webkit-linear-gradient(top left, #800506, #030301);
+background: -moz-linear-gradient(top left, #800506, #030301);
+background: linear-gradient(to bottom right, #800506, #030301);
+height:50px;
+}
+h4{
+    text-align: center;
+    color: white;
+    font-size:20px;
+   font-weight: 300;
+   text-shadow: 0 0 3px white;
+} */

@@ -4,18 +4,19 @@
 *
 
 /*---Header---*/
-.header
+/* .header
 {
-  height:110vh;
+  height:90vh;
   width:100vw;
   background: linear-gradient(rgba(165, 69, 17, 0.381), rgba(0,0,0,0.5)),url('https://wallpaperaccess.com/full/2862101.jpg');
   background-size:cover; 
-}
+} */
 
 
 /*---Navbar---*/
 .navbar
 {
+  height: 5.5em;
   position:absolute;
   width:100%;
   padding:50px;
@@ -60,3 +61,58 @@
   }
   
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav
+{ */
+    /* margin-top: 25px; */
+    /* Created with https://www.css-gradient.com */
+/* background: #800506;
+background: -webkit-linear-gradient(top left, #800506, #030301);
+background: -moz-linear-gradient(top left, #800506, #030301);
+background: linear-gradient(to bottom right, #800506, #030301);
+
+} */
+/* a
+{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 0 3px white; 
+ 
+ 
+} */
+/* #books
+{
+ 
+    margin-left:640px;
+} */
+/* #home
+{
+    margin-left:670px; 
+} */
+/* a:hover{
+    color:white;
+    font-weight: 500;
+}
+.navbar-nav h1{
+    color: white;
+    text-shadow: 0 0 3px white; 
+    margin-left: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+} */

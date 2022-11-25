@@ -1,25 +1,56 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { BookssService } from '../bookss.service';
-import { LoginModel } from '../login/LoginModel';
+import { UserserviceService } from '../userservice.service';
+import { FormBuilder, Validators } from '@angular/forms';
+
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  title:String = "Login";
-  constructor(private bookservice:BookssService,private router:Router) { }
+  user= {
+    firstname: '',
+    lastname: '',
+    username: '',
+    password: ''
+  
+  
 
-  loginItem = new LoginModel('','','',0,'');
+   }
+  constructor(private userService:UserserviceService,private router:Router) { }
 
-  ngOnInit(){
+  ngOnInit(): void {
   }
-  AddUser(){
-    this.bookservice.signup(this.loginItem);
-    console.log("called");
-    alert("success added user");
-    this.router.navigate(['login']);
+  signup()
+  {    console.log("user",this.user);
+    let result:any=this.userService.newUser(this.user);
+    console.log("result",result);
+    result.subscribe(
+
+      (res:any)=>{
+        alert(res.status);
+        this.router.navigate(['login']);
+      },
+      (err:any)=>
+      {
+        alert(err.error.status);
+      }
+
+    )
+   
+    
   }
+
+  // signupForm=this.fb.group(
+  //   {
+  //     username:['',Validators.required],
+  //     password:['',[Validators.minLength(6),Validators.required]],
+  //     confirm_password:['',[Validators.minLength(6),Validators.required]]
+
+  //   }
+    
+    // )
+  
 
 }
